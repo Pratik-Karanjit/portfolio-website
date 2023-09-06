@@ -1,0 +1,46 @@
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+  z-index: 1000; 
+}
+
+
+.navbar-link {
+  margin: 0 20px;
+  display: none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  outline: none; /* Add this line to remove the outline */
+  border: 1px;
+    background: black;
+    cursor: pointer;
+}
+
+.navbar-link:hover {
+  color: blue;
+}
+
+/* To make the site responsive */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-link {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+}
+
+.navbar-link:focus {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}

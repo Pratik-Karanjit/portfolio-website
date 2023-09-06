@@ -1,0 +1,96 @@
+.contact-section {
+    background-image: url('../Project CSS/black.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .contact-section,h1{
+    font-family: trendsetter;
+    font-size: 60px;
+  }
+  .contact-section,h2{
+    font-family: trendsetter;
+    font-size: 20px;
+  }
+  
+  .form-container {
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-element-spacing {
+    margin-bottom: 15px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 33px;
+    padding-right: 116px;
+    padding-left: 24px;
+    border: none;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    background-color: #444;
+  }
+  
+  .form-button {
+    background-color:#52524F;
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .form-button:hover {
+    background-color: #e68a00;
+  }
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .error-message {
+    color: white; 
+    margin-top: 5px;
+  }
+  /* Arrange First Name and Last Name in the same line */
+  #fName,
+  #lName {
+    width: 48%;
+    display: inline-block;
+    margin-right: 4%;
+  }
+  
+  /* Arrange Email and Company Name in the same line */
+  #email,
+  #companyWebsite {
+    width: 48%;
+    display: inline-block;
+    margin-right: 4%;
+  }
+  
+  /* Description */
+  #description {
+    width:74%;
+    resize: vertical;
+    min-height: 80px;  
+    max-height: 100px;  
+  }
+  
+  /* Additional styles as needed */
+  
