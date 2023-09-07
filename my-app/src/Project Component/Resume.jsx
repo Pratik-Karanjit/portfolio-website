@@ -73,6 +73,7 @@
 import React from 'react';
 import '../Project CSS/page.css'; // Make sure to import your CSS file
 import resumeImg from '../Project CSS/me.png';
+import DownloadButton from './DownloadCv';
 
 const Resume = () => {
   return (
@@ -149,7 +150,7 @@ const Resume = () => {
 </div>
               </div>
               <div className="resume-download">
-                <a href="/path-to-your-cv.pdf" className="btn btn-primary">Download CV</a>
+              <DownloadButton>Download CV</DownloadButton>
               </div>
             </div>
           </div>
@@ -166,7 +167,12 @@ const Resume = () => {
         <span style={{ color: "yellow" }}>&lt;code&gt;</span> I develop websites. <span style={{ color: "yellow" }}>&lt;/code&gt;</span>
       </span>
     </p>
-            <button className="btn" style={{ marginRight: "500px", background: "yellow", fontWeight: 'bold' }}>Explore</button>
+
+    <button onClick={() => {
+    window.open('https://github.com/Pratik-Karanjit?tab=repositories', '_blank');}}
+  className="btn"
+  style={{ marginRight: "500px", background: "yellow", fontWeight: 'bold' }}>Explore</button>
+
             {/* <div className="resume-photo">
               <img src={resumeImg} alt="Resume" className="img-fluid rounded-circle" />
             </div> */}
@@ -182,13 +188,10 @@ const Resume = () => {
               <h3>1</h3> <h5> Year Experience</h5>
             </div>
             <div style={{ background: '#252531', padding: '1.5rem', borderRadius: '1rem', color: 'white'}}>
-              <h3>3</h3> <h5> Completed Projects</h5>
+              <h3>4</h3> <h5> Completed Projects</h5>
             </div>
             <div style={{ background: '#252531', padding: '1.5rem', borderRadius: '1rem', color: 'white'}}>
-              <h3>1</h3> <h5> Completed Projects</h5>
-            </div>
-            <div style={{ background: '#252531', padding: '1.5rem', borderRadius: '1rem', color: 'white'}}>
-              <h3>1</h3> <h5> Completed Projects</h5>
+              <h3>1</h3> <h5> Project Supervision</h5>
             </div>
           </div>
         </div>
@@ -197,22 +200,38 @@ const Resume = () => {
         <div className="col-md-4">
           <div class="p-5 text-light" style={{ background: 'rgb(37, 37, 49)', borderRadius: '10px'  }}>
             <p style={{ fontSize: "18px" }}>Login Management System</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisisuscipi</p>
-            <button style={{ background: "yellow", borderRadius: '7px', padding: '5px 10px', fontWeight: 'bold', marginTop: '2rem' }}>More</button>
+            <p>Developed a comprehensive login management system with essential features.
+Implemented user registration, login, logout, deletion, and deactivation functionality.<br></br>
+Designed user profiles with options for updating email, password, and profile information.</p>
+<button onClick={() => {
+    window.open('https://github.com/Pratik-Karanjit/login-management-system', '_blank');}}
+  className="btn"
+  style={{ background: "yellow", fontWeight: 'bold' }}>View Project</button>
           </div>
         </div>
         <div className="col-md-4">
           <div class="p-5 text-light" style={{ background: 'rgb(37, 37, 49)', borderRadius: '10px' }}>
-            <p style={{ fontSize: "18px" }}>Login Management System</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisisuscipi</p>
-            <button style={{ background: "yellow", borderRadius: '7px', padding: '5px 10px', fontWeight: 'bold', marginTop: '2rem' }}>More</button>
+            <p style={{ fontSize: "18px" }}>E-commerce Website</p>
+            <p>Developed a fully functional e-commerce site using MERN stack. <br></br>
+Features: User authentication, product management, search, and shopping cart.
+Designed responsive UI with HTML/CSS.
+Implemented CRUD for admin. <br></br>
+Utilized MongoDB for data storage.</p>
+<button onClick={() => {
+    window.open('https://github.com/Pratik-Karanjit/e-commerce-website', '_blank');}}
+  className="btn"
+  style={{ background: "yellow", fontWeight: 'bold' }}>View Project</button>
           </div>
         </div>
         <div className="col-md-4">
           <div class="p-5 text-light" style={{ background: 'rgb(37, 37, 49)', borderRadius: '10px'  }}>
-            <p style={{ fontSize: "18px" }}>Login Management System</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisisuscipi</p>
-            <button style={{ background: "yellow", borderRadius: '7px', padding: '5px 10px', fontWeight: 'bold', marginTop: '2rem' }}>More</button>
+            <p style={{ fontSize: "18px" }}>MERNventures: A month long journey to Full Stack Development</p>
+            <p>Demonstrated commitment and dedication by completing the intensive month-long MERN Challenge.
+Gained proficiency in a comprehensive set of skills and knowledge required for full-stack development with the MERN stack.</p>
+<button onClick={() => {
+    window.open('https://github.com/Pratik-Karanjit/30-days-mern-challenge', '_blank');}}
+  className="btn"
+  style={{ background: "yellow", fontWeight: 'bold' }}>View Project</button>
           </div>
         </div>
       </div>
