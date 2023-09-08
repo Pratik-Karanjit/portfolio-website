@@ -4,7 +4,9 @@ import meicon from '../Project CSS/logo.png';
 const Navbar = ({ scrollToAbout, scrollToResume, scrollToContact }) => {
   return (
     <nav className='navbar navbar-expand-md navbar-light' style={{background: 'black'}}>
-      <img src={meicon} alt="mee" style={{ height: '50px', marginLeft: '6rem' }} />
+      <a href="/" style={{ textDecoration: 'none' }}>
+    <img src={meicon} alt="me" style={{ height: '50px', marginLeft: '6rem' }} />
+  </a>
 
     <div className='container-xxl'>
       <a href='#intro' className='navbar-brand'>

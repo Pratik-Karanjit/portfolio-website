@@ -36,27 +36,24 @@ const ContactPage = () => {
     <section
       id="contact"
       className="contact-section"
-      style={{
-        backgroundImage: `url(${backgroundImg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        minHeight: '100vh',
-      }}
+      style={{ background: 'black', minHeight: '96vh' }}
     >
       <div className="container">
-        <div className="row">
-          <div className="col-md-12 col-sm-6 text-center">
-            <h1 className="display-1 contact-heading" style={{ color: 'white', textAlign: 'left', paddingLeft: '10%',fontSize: '60px' }}>
-              Contact
-            </h1>
-            <div style={{ paddingTop: '2rem' }}>
-              <h2 className="contact-subheading" style={{ color: 'white', textAlign: 'left', paddingLeft: '18%' }}>
-                Get in touch via the contact form below and <br />
-                I'll come back to you as soon as possible.
-              </h2>
-            </div>
-          </div>
-        </div>
+      <div className="row">
+  <div className="col-md-12 col-sm-6 text-center">
+    <h1 className="display-1 contact-heading" style={{ color: 'white', textAlign: 'left', paddingLeft: '10%', paddingTop: '5%', fontSize: '70px', fontFamily:"freight-text-pro" }}>
+      Contact
+    </h1>
+  </div>
+  
+  <div style={{ position: 'relative', paddingTop: '2rem' }}>
+    <h3 className="contact-subheading" style={{ color: 'white', textAlign: 'left', paddingLeft: '18%', position: 'absolute', top: '100px', left: 0 }}>
+      Get in touch via the contact form below and 
+      I'll come back to you<br /> as soon as possible.
+    </h3>
+  </div>
+</div>
+
         <div className="row justify-content-center align-items-center" style={{ minHeight: '80vh' }}>
           <div className="col-md-8">
             <div className="form-container">
@@ -133,7 +130,7 @@ const ContactPage = () => {
                       <ErrorMessage  style={{ color: 'white' }} name="description" component="div" className="error-message" />
                     </div>
                     <div className="form-element-spacing" style={{ display: 'flex', justifyContent: 'flex-end' }}>
-                      <button type="submit" className="form-button btn btn-primary">
+                      <button type="submit" className="btn"  style={{ background: "yellow", fontWeight: 'bold' }}>
                         Submit
                       </button>
                     </div>

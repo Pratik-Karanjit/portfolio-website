@@ -67,9 +67,11 @@ const WowProject = () => {
           scrollToResume={() => scrollToSection(resumeRef)}
           scrollToContact={() => scrollToSection(contactRef)}
         />
-  
+
+
         <div ref={aboutRef}>
-          <About />
+       
+<About scrollToContact={() => scrollToSection(contactRef)} /> {/* Include the About component with scrollToContact prop */}
         </div>
   
         <div ref={resumeRef}>

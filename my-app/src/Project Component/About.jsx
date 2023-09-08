@@ -49,7 +49,7 @@ import '../Project CSS/page.css';
 import backgroundImg from '../Project CSS/black.jpg'; // Update the path and filename accordingly
 
 
-const About = () => {
+const About = ({ scrollToContact }) => {
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
@@ -71,6 +71,9 @@ const About = () => {
     My skills lie in developing websites and I have expertise in the MERN Stack.
     Join me on my journey as I create innovative web solutions.
   </h3>
+  <button className='btn' style={{ background: 'yellow', fontWeight: 'bold' }} onClick={scrollToContact}>
+        Let's Connect!
+      </button>
 </div>
           <div className="col-md-5 text-center d-md-block">
             <img src={fbicon} className="img-fluid me" alt="me" style={{position: 'absolute', right: '300px', bottom: '0', height: '700px'}}/>

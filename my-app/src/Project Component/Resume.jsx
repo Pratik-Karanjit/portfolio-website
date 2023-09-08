@@ -234,17 +234,7 @@ Gained proficiency in a comprehensive set of skills and knowledge required for f
   style={{ background: "yellow", fontWeight: 'bold' }}>View Project</button>
           </div>
         </div>
-        <div className="col-md-4">
-          <div class="p-5 text-light" style={{ background: 'rgb(37, 37, 49)', borderRadius: '10px'  }}>
-            <p style={{ fontSize: "18px" }}>MERNventures: A month long journey to Full Stack Development</p>
-            <p>Demonstrated commitment and dedication by completing the intensive month-long MERN Challenge.
-Gained proficiency in a comprehensive set of skills and knowledge required for full-stack development with the MERN stack.</p>
-<button onClick={() => {
-    window.open('https://github.com/Pratik-Karanjit/30-days-mern-challenge', '_blank');}}
-  className="btn"
-  style={{ background: "yellow", fontWeight: 'bold' }}>View Project</button>
-          </div>
-        </div>
+       
       </div>
     </div>
         </div>
