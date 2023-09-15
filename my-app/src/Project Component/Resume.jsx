@@ -188,7 +188,7 @@ const Resume = () => {
               <h3>1</h3> <h5> Year Experience</h5>
             </div>
             <div style={{ background: '#252531', padding: '1.5rem', borderRadius: '1rem', color: 'white'}}>
-              <h3>4</h3> <h5> Completed Projects</h5>
+              <h3>5</h3> <h5> Completed Projects</h5>
             </div>
             <div style={{ background: '#252531', padding: '1.5rem', borderRadius: '1rem', color: 'white'}}>
               <h3>1</h3> <h5> Project Supervision</h5>
@@ -225,11 +225,11 @@ Utilized MongoDB for data storage.</p>
         </div>
         <div className="col-md-4">
           <div class="p-5 text-light" style={{ background: 'rgb(37, 37, 49)', borderRadius: '10px'  }}>
-            <p style={{ fontSize: "18px" }}>MERNventures: A month long journey to Full Stack Development</p>
-            <p>Demonstrated commitment and dedication by completing the intensive month-long MERN Challenge.
-Gained proficiency in a comprehensive set of skills and knowledge required for full-stack development with the MERN stack.</p>
+            <p style={{ fontSize: "18px" }}>Regex Generator Website</p>
+            <p>Created a useful Regex generator website that provides a wide range of choices on selective Regex requirement.<br></br> User can search 
+              for their desired Regex and can copy the Regex pattern for their personal use.  </p>
 <button onClick={() => {
-    window.open('https://github.com/Pratik-Karanjit/30-days-mern-challenge', '_blank');}}
+    window.open('https://github.com/Pratik-Karanjit/regex-website', '_blank');}}
   className="btn"
   style={{ background: "yellow", fontWeight: 'bold' }}>View Project</button>
           </div>
