@@ -1,53 +1,7 @@
-// import React, { useEffect, useState } from 'react';
-// // import '../Project CSS/page.css'; // Import the external CSS file
-// import fbicon from '../Project CSS/mee.png';
-// import logoicon from '../Project CSS/logo.png';
-
-// const About = () => {
-//   const [animate, setAnimate] = useState(false);
-
-//   useEffect(() => {
-//     setTimeout(() => {
-//       setAnimate(true);
-//     }, 500);
-
-//     setTimeout(() => {
-//       setAnimate(false);
-//     }, 2500);
-//   }, []);
-
-//   return (
-//     <div className='hero'>
-     
-//       <img src={logoicon} className='logo' alt='logo' /> {/* Logo image */}
-//       <div className='description'>
-//         <div className={`content ${animate ? 'animated' : ''}`}>
-//           <div className='text'>
-//           <h1>Hi, <br /> <i>I'm Pratik</i></h1>
-//           <h3>Based in Kathmandu, I am pursuing my Bachelors Degree<br></br> at Islington College.
-//           My skills lie in developing websites <br></br>and I have expertise in the MERN Stack. 
-//           Join me on my <br></br>journey as I create innovative web solutions.</h3>
-//           </div>
-//           <div className='images'>
-//             <img src={fbicon} className='me' alt='me' />
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default About;
-
-
-
-
-// About.js
 import React, { useEffect, useState } from 'react';
 import fbicon from '../Project CSS/mee.png';
 import '../Project CSS/page.css';
 import backgroundImg from '../Project CSS/black.jpg'; // Update the path and filename accordingly
-
 
 const About = ({ scrollToContact }) => {
   const [fadeIn, setFadeIn] = useState(false);
@@ -57,31 +11,25 @@ const About = ({ scrollToContact }) => {
   }, []);
 
   return (
-    <section id="intro" style={{ background: 'black', minHeight: '96vh' }}>
-
+    <section id="intro" style={{ background: 'black', minHeight: '96vh', position: 'relative' }}>
       <div className="container-lg">
         <div className="row g-4 justify-content-center align-items-center">
-        <div className={`col-md-5 mt-15 text-center text-md-start fade-in ${fadeIn ? 'active' : ''}`}>
-  <h1>
-    <div className="display-1" style={{ color: 'white' }}>Hi,</div>
-    <div className="display-2" style={{ color: 'white' }}><i>I'm Pratik</i></div>
-  </h1>
-  <h3 className="lead my-4" style={{ color: 'white' }}>
-    Based in Kathmandu, I am pursuing my Bachelors Degree at Islington College.
-    My skills lie in developing websites and I have expertise in the MERN Stack.
-    Join me on my journey as I create innovative web solutions.
-  </h3>
-  <button className='btn' style={{ background: 'yellow', fontWeight: 'bold' }} onClick={scrollToContact}>
-        Let's Connect!
-      </button>
-</div>
-          <div className="col-md-5 text-center d-md-block">
-            <img src={fbicon} className="img-fluid me" alt="me" style={{position: 'absolute', right: '300px', bottom: '0', height: '700px'}}/>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+          <div className={`col-md-5 mt-15 text-center text-md-start fade-in ${fadeIn ? 'active' : ''}`} style={{ marginLeft: 'auto' }}>
+            <h1>
+              <div className="display-1" style={{ color: 'white' }}>Hi,</div>
+              <div className="display-2" style={{ color: 'white' }}><i>I'm Pratik</i></div>
+            </h1>
+            <h3 className="lead my-4" style={{ color: 'white' }}>
+              Based in Kathmandu, I am pursuing my Bachelors Degree at Islington College.
+              My skills lie in developing websites, and I have expertise in the MERN Stack.
+              Join me on my journey as I create innovative web solutions.
+            </h3>
+            <button className='btn d-block d-md-inline-block' style={{ background: 'yellow', fontWeight: 'bold', marginBottom: '15px' }} onClick={scrollToContact}>
+              Let's Connect!
+            </button>
+          </div>
+          <div className="col-md-5 text-center d-md-block position-absolute bottom-0 start-0" style={{ left: 'auto', zIndex: '1' }}>
+            <img src={fbicon} className="img-fluid me" alt="me" style={{ height: 'auto', maxWidth: '78%', maxHeight: '650px', width: '100%' }} />
           </div>
         </div>
       </div>
@@ -90,5 +38,52 @@ const About = ({ scrollToContact }) => {
 };
 
 export default About;
+
+
+
+
+
+
+
+// import React, { useEffect, useState } from 'react';
+// import fbicon from '../Project CSS/mee.png';
+// import '../Project CSS/page.css';
+// import backgroundImg from '../Project CSS/black.jpg'; // Update the path and filename accordingly
+
+// const About = ({ scrollToContact }) => {
+//   const [fadeIn, setFadeIn] = useState(false);
+
+//   useEffect(() => {
+//     setFadeIn(true);
+//   }, []);
+
+//   return (
+//     <section id="intro" style={{ background: 'black', minHeight: '96vh', position: 'relative' }}>
+//       <div className="container-lg">
+//         <div className="row g-4 justify-content-center align-items-center">
+//           <div className={`col-md-5 mt-15 text-center text-md-start fade-in ${fadeIn ? 'active' : ''}`}>
+//             <h1>
+//               <div className="display-1" style={{ color: 'white' }}>Hi,</div>
+//               <div className="display-2" style={{ color: 'white' }}><i>I'm Pratik</i></div>
+//             </h1>
+//             <h3 className="lead my-4" style={{ color: 'white' }}>
+//               Based in Kathmandu, I am pursuing my Bachelors Degree at Islington College.
+//               My skills lie in developing websites, and I have expertise in the MERN Stack.
+//               Join me on my journey as I create innovative web solutions.
+//             </h3>
+//             <button className='btn' style={{ background: 'yellow', fontWeight: 'bold' }} onClick={scrollToContact}>
+//               Let's Connect!
+//             </button>
+//           </div>
+//           <div className="col-md-5 text-center d-md-block position-absolute bottom-0 end-0">
+//             <img src={fbicon} className="img-fluid me" alt="me" style={{ height: 'auto', maxWidth: '100%', maxHeight: '700px' }} />
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default About;
 
 
