@@ -199,7 +199,7 @@ const Resume = () => {
       <div className="row justify-content-center" style={{ marginTop: "20px" }}>
         <div className="col-md-4">
           <div class="p-5 text-light" style={{ background: 'rgb(37, 37, 49)', borderRadius: '10px'  }}>
-            <p style={{ fontSize: "18px" }}>Login Management System</p>
+            <p style={{ fontSize: "18px" }}><b>Login Management System</b></p>
             <p>Developed a comprehensive login management system with essential features.
 Implemented user registration, login, logout, deletion, and deactivation functionality.<br></br>
 Designed user profiles with options for updating email, password, and profile information.</p>
@@ -211,7 +211,7 @@ Designed user profiles with options for updating email, password, and profile in
         </div>
         <div className="col-md-4">
           <div class="p-5 text-light" style={{ background: 'rgb(37, 37, 49)', borderRadius: '10px' }}>
-            <p style={{ fontSize: "18px" }}>E-commerce Website</p>
+            <p style={{ fontSize: "18px" }}><b>E-commerce Website</b></p>
             <p>Developed a fully functional e-commerce site using MERN stack. <br></br>
 Features: User authentication, product management, search, and shopping cart.
 Designed responsive UI with HTML/CSS.
@@ -225,7 +225,7 @@ Utilized MongoDB for data storage.</p>
         </div>
         <div className="col-md-4">
           <div class="p-5 text-light" style={{ background: 'rgb(37, 37, 49)', borderRadius: '10px'  }}>
-            <p style={{ fontSize: "18px" }}>Regex Generator Website</p>
+            <p style={{ fontSize: "18px" }}><b>Regex Generator Website</b></p>
             <p>Created a useful Regex generator website that provides a wide range of choices on selective Regex requirement.<br></br> User can search 
               for their desired Regex and can copy the Regex pattern for their personal use.  </p>
 <button onClick={() => {

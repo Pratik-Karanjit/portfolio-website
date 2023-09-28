@@ -13,44 +13,6 @@ import Resume from "./Project Component/Resume";
 import ContactPage from "./Project Component/Contact";
 import Footer from "./Project Component/Footer";
 
-// const WowProject = () => {
-//   const aboutRef = useRef(null);
-//   const resumeRef = useRef(null);
-//   const contactRef = useRef(null);
-  
-
-//   const scrollToSection = (ref) => {
-//     ref.current.scrollIntoView({ behavior: 'smooth' });
-//   };
-
-//   return (
-//     <div>
-      
-//       <NavBar
-//         scrollToAbout={() => scrollToSection(aboutRef)}
-//         scrollToResume={() => scrollToSection(resumeRef)}
-//         scrollToContact={() => scrollToSection(contactRef)}
-//       />
-
-//       <div ref={aboutRef}>
-//         <About />
-//       </div>
-
-//       <div ref={resumeRef}>
-//         <Resume />
-//       </div>
-
-//       <div ref={contactRef}>
-//         <Contact />
-//         <Footer />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default WowProject;
-
-
 const WowProject = () => {
     const aboutRef = useRef(null);
     const resumeRef = useRef(null);
