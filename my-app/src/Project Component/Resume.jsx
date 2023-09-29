@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Project CSS/page.css'; // Make sure to import your CSS file
+import '../Project CSS/page.css'; 
 import resumeImg from '../Project CSS/me.png';
 import DownloadButton from './DownloadCv';
 
@@ -25,7 +25,7 @@ const Resume = () => {
     className="progress-circle reactjs-progress"
       cx="50"
       cy="50"
-      r="40" /* Adjust the radius as needed */
+      r="40" 
     />
     <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" className="progress-percentage">
       80%
@@ -40,7 +40,7 @@ const Resume = () => {
      className="progress-circle expressjs-progress"
       cx="50"
       cy="50"
-      r="40" /* Adjust the radius as needed */
+      r="40"
     />
     <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" className="progress-percentage">
       75%
