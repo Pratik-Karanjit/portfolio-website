@@ -86,7 +86,7 @@ const Resume = () => {
 
           <div className="container-lg" style={{marginLeft: '10rem'}}>
       <div className="row">
-        <div className="col-md-12 order-1 order-md-2" style={{ background: 'rgb(37, 37, 55)', borderRadius: '1rem' }}>
+       <div class="hide-on-small">
           {/* Right section */}
           <div className="resume-right-div bg-dark">
             <h2 style={{ color: "white", paddingRight: "450px", paddingTop: "30px" }}>Discover my Work Space</h2>
@@ -110,7 +110,7 @@ const Resume = () => {
 
         
       </div>
-      <div className="col-md-12">
+      <div class="hide-on-small">
           <div style={{ display: "flex", padding: "1.5rem", gap: '1rem', marginLeft: "20px", justifyContent: 'space-around' }}>
             <div style={{ background: '#252531', padding: '1.5rem', borderRadius: '1rem', color: 'white'}}>
               <h3>1</h3> <h5> Year Experience</h5>
@@ -124,7 +124,7 @@ const Resume = () => {
           </div>
         </div>
 
-      <div className="row justify-content-center" style={{ marginTop: "20px" }}>
+        <div className="row justify-content-center hide-on-small" style={{ marginTop: "20px" }}>
         <div className="col-md-4">
           <div class="p-5 text-light" style={{ background: 'rgb(37, 37, 49)', borderRadius: '10px'  }}>
             <p style={{ fontSize: "18px" }}><b>Login Management System</b></p>

@@ -283,3 +283,9 @@ my-info{
 .mt-15 {
   margin-top: 15rem !important;
 }
+
+@media (max-width: 13in) {
+  .hide-on-small {
+    display: none;
+  }
+}
