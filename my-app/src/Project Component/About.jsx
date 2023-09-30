@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import fbicon from '../Project CSS/mee.png';
 import '../Project CSS/page.css';
-import backgroundImg from '../Project CSS/black.jpg'; // Update the path and filename accordingly
 
 const About = ({ scrollToContact }) => {
   const [fadeIn, setFadeIn] = useState(false);
@@ -13,7 +12,7 @@ const About = ({ scrollToContact }) => {
   return (
     <section id="intro" style={{ background: 'black', minHeight: '96vh', position: 'relative' }}>
       <div className="container-lg">
-        <div className="row g-4 justify-content-center align-items-center">
+      <div className="row g-4 justify-content-center align-items-center custom-margin-top">
           <div className={`col-md-5 mt-15 text-center text-md-start fade-in ${fadeIn ? 'active' : ''}`} style={{ marginLeft: 'auto' }}>
             <h1>
               <div className="display-1" style={{ color: 'white' }}>Hi,</div>

@@ -106,7 +106,6 @@
 
 .social-icons {
   margin-bottom: 1rem;
-  padding-right: 80rem;
 
 }
 
@@ -288,4 +287,8 @@ my-info{
   .hide-on-small {
     display: none;
   }
+}
+
+.custom-margin-top {
+  margin-top: 0.01rem; /* Adjust the value as needed */
 }

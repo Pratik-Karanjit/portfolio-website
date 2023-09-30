@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Formik, Form, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import backgroundImg from '../Project CSS/black.jpg'; // Update the path and filename accordingly
+import Swal from 'sweetalert2';
 
 
 const ContactPage = () => {
@@ -19,11 +19,18 @@ const ContactPage = () => {
   const onSubmit = async (info) => {
     try {
       await axios.post('http://localhost:8000/users', info);
+      Swal.fire({
+        title: 'Contact Submitted',
+        text: 'Your contact information has been submitted successfully.',
+        icon: 'success',
+        confirmButtonText: 'OK',
+      });
       navigate('/registration-success');
     } catch (error) {
       console.log('unable to create');
     }
   };
+  
 
   const validationSchema  = yup.object({
     fName: yup.string().required('First Name is required.'),
@@ -47,11 +54,24 @@ const ContactPage = () => {
   </div>
   
   <div style={{ position: 'relative', paddingTop: '2rem' }}>
-    <h3 className="contact-subheading" style={{ color: 'white', textAlign: 'left', paddingLeft: '18%', position: 'absolute', top: '100px', left: 0 }}>
-      Get in touch via the contact form below and 
-      I'll come back to you<br /> as soon as possible.
-    </h3>
-  </div>
+  <h3
+    className="contact-subheading"
+    style={{
+      color: 'white',
+      textAlign: 'left',
+      position: 'absolute',
+      top: '100px',
+      left: '0',
+      width: '100%', // Ensure full width on mobile
+      paddingLeft: '12%', // Adjust as needed for medium screens
+      transition: 'padding-left 0.3s', // Add smooth transition
+    }}
+  >
+    Get in touch via the contact form below and
+    I'll come back to you<br /> as soon as possible.
+  </h3>
+</div>
+
 </div>
 
         <div className="row justify-content-center align-items-center" style={{ minHeight: '80vh' }}>

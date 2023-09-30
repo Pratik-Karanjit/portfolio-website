@@ -2,13 +2,15 @@ import React from 'react';
 import '../Project CSS/page.css'; 
 import resumeImg from '../Project CSS/me.png';
 import DownloadButton from './DownloadCv';
+import ScrollToTopButton from './ScrollToTopButton';
 
 const Resume = () => {
   return (
     <section id="resume" className="resume-section py-5">
       <div className="container">
         <div className="row">
-          <div className="col-md-3 order-2 order-md-1 bg-light">
+          <div className="col-md-3 order-2 order-md-1">
+            <ScrollToTopButton></ScrollToTopButton>
             {/* Left section */}
             <div className="resume-left-section">
               <div className="resume-photo">
@@ -100,15 +102,8 @@ const Resume = () => {
     window.open('https://github.com/Pratik-Karanjit?tab=repositories', '_blank');}}
   className="btn"
   style={{ marginRight: "500px", background: "yellow", fontWeight: 'bold' }}>Explore</button>
-
-            {/* <div className="resume-photo">
-              <img src={resumeImg} alt="Resume" className="img-fluid rounded-circle" />
-            </div> */}
-            {/* Add more content as needed */}
           </div>
         </div>
-
-        
       </div>
       <div class="hide-on-small">
           <div style={{ display: "flex", padding: "1.5rem", gap: '1rem', marginLeft: "20px", justifyContent: 'space-around' }}>
@@ -154,7 +149,7 @@ Utilized MongoDB for data storage.</p>
         <div className="col-md-4">
           <div class="p-5 text-light" style={{ background: 'rgb(37, 37, 49)', borderRadius: '10px'  }}>
             <p style={{ fontSize: "18px" }}><b>Regex Generator Website</b></p>
-            <p>Created a useful Regex generator website that provides a wide range of choices on selective Regex requirement.<br></br> User can search 
+            <p>Developed an easy to use Regex generator website that provides a wide range of regex pattern choices on selective Regex requirement.<br></br> User can search 
               for their desired Regex and can copy the Regex pattern for their personal use.  </p>
 <button onClick={() => {
     window.open('https://github.com/Pratik-Karanjit/regex-website', '_blank');}}
