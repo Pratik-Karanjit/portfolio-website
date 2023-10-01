@@ -1,8 +1,11 @@
-build:
-  base: /opt/build/repo/my-app
-  command: CI=false npm run build
-  commandOrigin: config
-environment:
-  - DEPRECATED
-publish: /opt/build/repo/my-app/build
-publishOrigin: config
+[build]
+  base = "/opt/build/repo/my-app"
+  command = "CI=false npm run build"
+  commandOrigin = "config"
+
+[environment]
+  DEPRECATED = true
+
+[publish]
+  directory = "/opt/build/repo/my-app/build"
+  publishOrigin = "config"
