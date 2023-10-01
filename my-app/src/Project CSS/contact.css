@@ -2,7 +2,7 @@
     background-image: url('../Project CSS/black.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 100vh; /* Adjust the height as needed */
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,7 +68,6 @@
     color: white; 
     margin-top: 5px;
   }
-  /* Arrange First Name and Last Name in the same line */
   #fName,
   #lName {
     width: 48%;
@@ -76,7 +75,6 @@
     margin-right: 4%;
   }
   
-  /* Arrange Email and Company Name in the same line */
   #email,
   #companyWebsite {
     width: 48%;
@@ -84,7 +82,6 @@
     margin-right: 4%;
   }
   
-  /* Description */
   #description {
     width:74%;
     resize: vertical;
@@ -92,5 +89,4 @@
     max-height: 100px;  
   }
   
-  /* Additional styles as needed */
   
