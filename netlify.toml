@@ -1,5 +1,5 @@
 [build]
-  base = "/portfolio/my-app"
+  base = "/opt/build/portfolio-website/my-app"
   command = "CI=false npm run build"
   commandOrigin = "config"
 
@@ -7,5 +7,5 @@
   DEPRECATED = true
 
 [publish]
-  directory = "/portfolio/my-app/build"
+  directory = "/opt/build/portfolio-website/my-app/build"
   publishOrigin = "config"
