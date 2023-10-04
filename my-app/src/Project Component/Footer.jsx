@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Project CSS/page.css';
+import ScrollToTopButton from './ScrollToTopButton';
 
 const Footer = () => {
   return (
@@ -8,6 +9,8 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-4">
             <div className="social-icons d-flex mt-5">
+            <ScrollToTopButton></ScrollToTopButton>
+
               <a href="https://www.facebook.com/Pratik.Karanjit/" target='_blank' rel='noopener noreferrer'><i className="fab fa-facebook"></i></a>
               <a href="https://www.linkedin.com/in/pratik-karanjit/" target='_blank' rel='noopener noreferrer'><i className="fab fa-linkedin"></i></a>
               <a href="https://www.instagram.com/pratik_karanjit/" target='_blank' rel='noopener noreferrer'><i className="fab fa-instagram"></i></a>
