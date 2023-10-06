@@ -67,8 +67,7 @@ const ContactPage = () => {
       transition: 'padding-left 0.3s', // Add smooth transition
     }}
   >
-    Get in touch via the contact form below and
-    I'll come back to you<br /> as soon as possible.
+  You can contact me via the contact form below.
   </h3>
 </div>
 
