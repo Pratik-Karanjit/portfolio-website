@@ -86,6 +86,7 @@ const Resume = () => {
           </div>
 
 
+{/* container starts here */}
           <div className="container-lg" style={{marginLeft: '10rem'}}>
       <div className="row">
        <div class="hide-on-small">
