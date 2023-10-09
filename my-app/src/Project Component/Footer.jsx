@@ -11,6 +11,7 @@ const Footer = () => {
             <div className="social-icons d-flex mt-5">
             <ScrollToTopButton></ScrollToTopButton>
 
+            {/* Links for connecting */}
               <a href="https://www.facebook.com/Pratik.Karanjit/" target='_blank' rel='noopener noreferrer'><i className="fab fa-facebook"></i></a>
               <a href="https://www.linkedin.com/in/pratik-karanjit/" target='_blank' rel='noopener noreferrer'><i className="fab fa-linkedin"></i></a>
               <a href="https://www.instagram.com/pratik_karanjit/" target='_blank' rel='noopener noreferrer'><i className="fab fa-instagram"></i></a>
@@ -18,6 +19,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-md-4 mt-2">
+          
             <p className="mb-5">Want to work together? <br /> Let's talk.</p>
           </div>
           <div className="col-md-4">
