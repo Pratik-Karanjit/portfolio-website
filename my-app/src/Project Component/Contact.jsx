@@ -54,21 +54,7 @@ const ContactPage = () => {
   </div>
   
   <div style={{ position: 'relative', paddingTop: '2rem' }}>
-  <h3
-    className="contact-subheading"
-    style={{
-      color: 'white',
-      textAlign: 'left',
-      position: 'absolute',
-      top: '100px',
-      left: '0',
-      width: '100%', // Ensure full width on mobile
-      paddingLeft: '12%', // Adjust as needed for medium screens
-      transition: 'padding-left 0.3s', // Add smooth transition
-    }}
-  >
-  You can contact me via the contact form below.
-  </h3>
+  
 </div>
 
 </div>

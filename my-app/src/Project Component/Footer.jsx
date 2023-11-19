@@ -11,7 +11,6 @@ const Footer = () => {
             <div className="social-icons d-flex mt-5">
             <ScrollToTopButton></ScrollToTopButton>
 
-            {/* Links for connecting */}
               <a href="https://www.facebook.com/Pratik.Karanjit/" target='_blank' rel='noopener noreferrer'><i className="fab fa-facebook"></i></a>
               <a href="https://www.linkedin.com/in/pratik-karanjit/" target='_blank' rel='noopener noreferrer'><i className="fab fa-linkedin"></i></a>
               <a href="https://www.instagram.com/pratik_karanjit/" target='_blank' rel='noopener noreferrer'><i className="fab fa-instagram"></i></a>
@@ -25,7 +24,7 @@ const Footer = () => {
           <div className="col-md-4">
             <div className="contact-info">
               <p className="mb-0">pratikkaranjit@gmail.com</p>
-              <p>9847346220</p>
+              <p className='pnumber'>9847346220</p>
             </div>
           </div>
         </div>

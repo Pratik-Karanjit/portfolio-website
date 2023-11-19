@@ -209,3 +209,114 @@ my-info{
 .custom-margin-top {
   margin-top: 0.01rem; 
 }
+
+
+
+@media (max-width: 768px) {
+  .resume-left-section {
+    width: 100%;
+    position: static; 
+    margin-bottom: 1rem; 
+  }
+
+  .resume-main-content {
+    margin-left: 0;
+    width: 100%; 
+  }
+  
+  .circular-field {
+    margin-bottom: 0.5rem;
+  }
+  
+  .resume-download {
+    text-align: center; 
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-section {
+    padding: 50px; /* Adjust padding for smaller screens */
+  }
+
+  .footer-section button {
+    right: 10%; /* Adjust button position for smaller screens */
+  }
+
+  .footer-section p {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .social-icons a {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .contact-info p {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  /* Add more adjustments for smaller screens in your styles */
+}
+
+@media (max-width: 500px) {
+  /* Add additional media queries for screens with a maximum width of 500px if needed */
+}
+
+
+
+@media (max-width: 400px) {
+  /* Additional styles for screens up to 400px width */
+  .footer-section {
+    padding: 30px; 
+  }
+
+  @media (max-width: 400px) {
+    .img-fluid.me {
+      display: none;
+    }
+    .btn.d-block.d-md-inline-block {
+      display: block;
+      margin: 0 auto; /* Center the button horizontally */
+      text-align: center; /* Center the text inside the button */
+    }
+  }
+
+  @media (max-width: 400px) {
+    p.mb-5 {
+      font-size: 16px; 
+      text-align: left;
+    }
+    p.mb-0{
+      font-size: 16px; 
+      text-align: left;
+
+    }
+    p.pnumber{
+      font-size: 16px; 
+      text-align: left;
+    }
+  }
+  
+  
+  
+
+  .footer-section button {
+    right: 5%; /* Adjust button position for even smaller screens */
+  }
+
+  /* Add more adjustments for screens up to 400px width */
+}
+
+@media (max-width: 320px) {
+  /* Additional styles for screens up to 320px width (example) */
+  .footer-section {
+    padding: 20px; /* Adjust padding for very small screens */
+  }
+
+  .footer-section button {
+    right: 2%; /* Adjust button position for very small screens */
+  }
+
+  /* Add more adjustments for screens up to 320px width */
+}
+
+

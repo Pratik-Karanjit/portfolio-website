@@ -4,7 +4,6 @@ import '../Project CSS/page.css';
 
 const About = ({ scrollToContact }) => {
   const [fadeIn, setFadeIn] = useState(false);
-// Rasdajdhauodhoaisldasd
   useEffect(() => {
     setFadeIn(true);
   }, []);

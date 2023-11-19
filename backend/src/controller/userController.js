@@ -5,7 +5,7 @@ import { sendMail } from "../utils/sendMail.js";
 
 
 export let createUser = expressAsyncHandler(async (req, res) => {
-    const data = req.body; // Assuming the form data is sent in the request body
+    const data = req.body;
     console.log(data)
     const mailInfo = {
       from: '"Pratik Karanjit" <uniquekc425@gmail.com>',
@@ -23,7 +23,7 @@ export let createUser = expressAsyncHandler(async (req, res) => {
   
     try {
       await sendMail(mailInfo);
-      successResponse(res, HttpStatus.CREATED, 'Email sent successfully', null); // Adjust HttpStatus and any other parameters
+      successResponse(res, HttpStatus.CREATED, 'Email sent successfully', null); 
     } catch (error) {
       console.log('Error sending email:', error.message);
     }
