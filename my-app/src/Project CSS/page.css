@@ -211,6 +211,41 @@ my-info{
 }
 
 
+/* Styles for screens with a minimum width of 1201px and a maximum width of 1200px */
+@media only screen and (min-width: 1201px) and (max-width: 1200px) {
+  .resume-section {
+    padding: 1rem; /* Adjust padding as needed */
+  }
+
+  .resume-left-section {
+    width: 100%; /* Make the left section take full width */
+    position: static; /* Remove absolute positioning */
+    height: auto; /* Auto height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .resume-photo {
+    text-align: center;
+  }
+
+  .resume-skills {
+    margin-top: 1rem; /* Adjust margin as needed */
+  }
+
+  .resume-download {
+    margin-top: 1rem; /* Adjust margin as needed */
+  }
+}
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
   .resume-left-section {
@@ -318,5 +353,6 @@ my-info{
 
   /* Add more adjustments for screens up to 320px width */
 }
+
 
 
