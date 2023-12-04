@@ -23,6 +23,7 @@ const Footer = () => {
           </div>
           <div className="col-md-4">
             <div className="contact-info">
+              {/* contact info */}
               <p className="mb-0">pratikkaranjit@gmail.com</p>
               <p className='pnumber'>9847346220</p>
             </div>

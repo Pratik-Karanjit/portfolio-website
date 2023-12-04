@@ -5,6 +5,7 @@ import { sendMail } from "../utils/sendMail.js";
 
 
 export let createUser = expressAsyncHandler(async (req, res) => {
+  //Taking data
     const data = req.body;
     console.log(data)
     const mailInfo = {
