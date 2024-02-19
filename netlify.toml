@@ -7,5 +7,5 @@
   DEPRECATED = true
 
 [publish]
-  directory = "my-app/build"
+  directory = "/"
   publishOrigin = "config"
